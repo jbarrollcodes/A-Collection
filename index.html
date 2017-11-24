@@ -1,0 +1,307 @@
+<!Doctype.html>
+<head>
+<title></title>	
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<html>
+
+<body bgcolor="#CC0D1E">
+<!-- This is the logo for the Jenny Bar -->
+<div id="right">
+	<h1>Jenny Bar<hr></h1>
+<!-- This is the dropdown navigation bar. -->
+<div id="Navigation">
+	<span><li>Menu</li></span>
+<div id="dropdown-content">
+	<li id="menus">Menus</li>
+	<li id="learn">About</li>
+	<li id="many">Colors</li>
+	<li id="images">Images</li>
+	<li id="gallery">Gallery</li>
+</div>
+</div>
+<!-- This is the about section for the fictional cafeteria inspired by the collection of consumption project. -->
+<div id="about">
+	<p id="me" data-food-type="about">The Jenny Bar is a casual, indie cafeteria. We offer a curated menu of the Owner's favorite foods.</p>
+</div>
+</div>
+
+<!-- These are the big elements that appear on the page. The paper div is the menu. The plate will house the food gallery. -->
+<div id="paper"></div>
+<div id="plate"></div>
+
+<!-- This is the food gallery that the user can click through by clicking the food item itself. -->
+
+<div id="brunch">
+<div id="peanutbutter"><img id="pb" src="images/pb.svg"></div>
+<div id="pig"><img id="bacon" src="images/bacon.svg"></div>
+<div id="os"><img id="cheer" src="images/cheerios.svg"></div>
+<div id="yum"><img id="pbcup" src="images/pbcup.svg"></div>
+<div id="fruit"><img id=raspy src="images/raspberry.svg"></div>
+<div id="ham"><img id=hammy src="images/hamburger.svg"></div>
+</div>
+
+<div id="lunch">
+<div id="italy"><img id="italian" src="images/hoagie.svg"></div>
+<div id="camilla"><img id="chicken" src="images/burrito.svg"></div>
+<div id="snack"><img id="city" src="images/za.svg"></div>
+</div>
+
+
+
+<div id="dinner">
+<div id="swirl"><img id="pasta" src="images/pasta.svg"></div>
+<div id="pep"><img id="pepperoni" src="images/za.svg"></div>
+<div id="meat"><img id="steak" src="images/steak.svg"></div>
+</div>
+
+
+
+
+<div id="sides">
+<div id="fries"><img id="pot" src="images/potato.svg"></div>
+<div id="tortillachips"><img id="tchips" src="images/tchips.svg"></div>
+<div id="kettle"><img id="kettlechip" src="images/tchips.svg"></div>
+<div id="red"><img id="raspberry" src="images/raspberry.svg"></div>
+<div id="cousin"><img id="cauliflower" src="images/cauliflower.svg"></div>
+<div id="it"><img id="cheezits" src="images/cheezits.svg"></div>
+<div id="gb"><img id="greenbeans" src="images/greenbeans.svg"></div>
+</div>
+
+<div id="beverages">
+<div id="dc"><img id="cola" src="images/cola.svg"></div>
+<div id="sister"><img id="sparkling" src="images/sparkling.svg"></div>
+<div id="skinny"><img id="latte" src="images/coffee.svg"></div>
+<div id="pro"><img id="prosecco" src="images/wine.svg"></div>
+</div>
+
+<div id="desserts">
+<div id="ice"><img id="icecream" src="images/icecream.svg"></div>
+<div id="f"><img id="fruity" src="images/raspberry.svg"></div>
+<div id="pbc"><img id="cups" src="images/pbcup.svg"></div>
+</div>
+
+<!-- This is the type menu only. If the user clicks images via the dropdown menu, images will appear instead. -->
+<div id="writing1">
+	<h3 data-food-type="words">Brunch</h3>
+<li><p data-food-type="words">Peanutbutter Wrap</p>
+	<img class="icon" data-food-type="objects" src="images/pb.svg">
+</li>
+<li><p data-food-type="words">Bacon</p>
+	<img class="icon" data-food-type="objects" src="images/bacon.svg">
+</li>
+<li><p data-food-type="words">Peanutbutter Cups</p>
+	<img class="icon" data-food-type="objects" src="images/pbcup.svg">
+</li>
+<li><p data-food-type="words">Raspberries</p>
+	<img class="icon" data-food-type="objects" src="images/raspberry.svg">
+</li>
+<li><p data-food-type="words">Hamburger</p>
+	<img class="icon" data-food-type="objects" src="images/hamburger.svg">
+</li>
+</div>
+
+<div id="writing2">
+<h3 data-food-type="words">Lunch</h3>
+<li><p data-food-type="words">Italian Sandwich</p>
+	<img class="icon" data-food-type="objects" src="images/hoagie.svg">
+</li>
+<li><p data-food-type="words">Chicken Burrito</p>
+	<img class="icon" data-food-type="objects" src="images/burrito.svg">
+</li>
+<li><p data-food-type="words">Snack Pizza</p>
+	<img class="icon" data-food-type="objects" src="images/za.svg">
+</li>
+</div>
+
+<div id="writing3">
+<h3 data-food-type="words">Dinner</h3>
+<li><p data-food-type="words">Pasta Shells with Marinara Sauce</p>
+	<img class="icon" data-food-type="objects" src="images/pasta.svg">
+</li>
+<li><p data-food-type="words">Pepperoni Pizza</p>
+	<img class="icon" data-food-type="objects" src="images/za.svg">
+</li>
+<li><p data-food-type="words">Steak</p>
+	<img class="icon" data-food-type="objects" src="images/steak.svg">
+</li>
+</div>
+
+<div id="writing4">
+<h3 data-food-type="words">Sides</h3>
+<li><p data-food-type="words">Potatoes</p>
+	<img class="icon" data-food-type="objects" src="images/potato.svg">
+</li>
+<li><p data-food-type="words">Tortilla Chips</p>
+	<img class="icon" data-food-type="objects" src="images/tchips.svg">
+</li>
+<li><p data-food-type="words">Raspberries</p>
+	<img class="icon" data-food-type="objects" src="images/raspberry.svg">
+</li>
+<li><p data-food-type="words">Cauliflower</p>
+	<img class="icon" data-food-type="objects" src="images/cauliflower.svg">
+</li>
+<li><p data-food-type="words">Cheezits</p>
+	<img class="icon" data-food-type="objects" src="images/cheezits.svg">
+</li>
+<li><p data-food-type="words">Greenbeans</p>
+	<img class="icon" data-food-type="objects" src="images/greenbeans.svg">
+</li>
+</div>
+
+<div id="writing5">
+<h3 data-food-type="words">Beverages</h3>
+<li><p data-food-type="words">Dietcoke</p>
+	<img class="icon" data-food-type="objects" src="images/cola.svg">
+</li>
+<li><p data-food-type="words">Sparkling Water</p>
+	<img class="icon" data-food-type="objects" src="images/sparkling.svg">
+</li>
+<li><p data-food-type="words">Iced Skim Latte</p>
+	<img class="icon" data-food-type="objects" src="images/coffee.svg">
+</li>
+<li><p data-food-type="words">Prosecco</p>
+	<img class="icon" data-food-type="objects" src="images/wine.svg">
+</li>
+</div>
+<div id="writing6">
+<h3 data-food-type="words">Desserts</h3>
+<li><p data-food-type="words">Cookies and Creme Icecream with Whipped Cream</p>
+	<img class="icon" data-food-type="objects" src="images/icecream.svg">
+</li>
+<li><p data-food-type="words">Raspberries</p>
+	<img class="icon" data-food-type="objects" src="images/raspberry.svg">
+</li>
+<li><p data-food-type="words">Peanutbutter Cups</p>
+	<img class="icon" data-food-type="objects" src="images/pbcup.svg">
+</li>
+</div>
+<!-- Visitors can order by color at this odd cafeteria. -->
+<div id="allcolors">
+<div id="colors1">
+<h3 data-food-type="words">Red</h3>
+<li><p data-food-type="words">Raspberries</p>
+	<img class="icon" data-food-type="objects" src="images/raspberry.svg">
+</li>
+<li><p data-food-type="words">Tomatoes</p>
+	<img class="icon" data-food-type="objects" src="images/tomato.svg">
+</li>
+<li><p data-food-type="words">Bolognese</p>
+	<img class="icon" data-food-type="objects" src="images/bolognese.svg">
+</li>
+</div>
+
+<div id="colors2">
+<h3 data-food-type="words">Brown</h3>
+<li><p data-food-type="words">Iced Skim Latte</p>
+	<img class="icon" data-food-type="objects" src="images/coffee.svg">
+</li>
+<li><p data-food-type="words">Diet Coke</p>
+	<img class="icon" data-food-type="objects" src="images/cola.svg">
+</li>
+<li><p data-food-type="words">Peanutbutter Cups</p>
+	<img class="icon" data-food-type="objects" src="images/pbcup.svg">
+</li>
+<li><p data-food-type="words">Peanutbutter</p>
+	<img class="icon" data-food-type="objects" src="images/pb.svg">
+</li>
+<li><p data-food-type="words">Steak</p>
+	<img class="icon" data-food-type="objects" src="images/steak.svg">
+</li>
+<li><p data-food-type="words">Cheerios</p>
+	<img class="icon" data-food-type="objects" src="images/cheerios.svg">
+</li>
+<li><p data-food-type="words">Chocolate Bar</p>
+	<img class="icon" data-food-type="objects" src="images/chocolate.svg">
+</li>
+</div>
+
+<div id="colors3">
+<h3 data-food-type="words">Green</h3>
+<li><p data-food-type="words">Green Beans</p>
+	<img class="icon" data-food-type="objects" src="images/coffee.svg">
+</li>
+<li><p data-food-type="words">Avocado</p>
+	<img class="icon" data-food-type="objects" src="images/avocado.svg">
+</li>
+<li><p data-food-type="words">Guacamolie</p>
+	<img class="icon" data-food-type="objects" src="images/guacamolie.svg">
+</li>
+<li><p data-food-type="words">Kale</p>
+	<img class="icon" data-food-type="objects" src="images/kale.svg">
+</li>
+<li><p data-food-type="words">Kale Chips</p>
+	<img class="icon" data-food-type="objects" src="images/tchips.svg">
+</li>
+</div>
+
+<div id="colors4">
+<h3 data-food-type="words">White</h3>
+<li><p data-food-type="words">Cookies and Cream Ice Cream with Whipped Cream</p>
+	<img class="icon" data-food-type="objects" src="images/icecream.svg">
+</li>
+<li><p data-food-type="words">Cauliflower</p>
+	<img class="icon" data-food-type="objects" src="images/cauliflower.svg">
+</li>
+<li><p data-food-type="words">Skim Milk</p>
+	<img class="icon" data-food-type="objects" src="images/coffee.svg">
+</li>
+</div>
+
+<div id="colors5">
+<h3 data-food-type="words">Multi</h3>
+<li><p data-food-type="words">Chicken Burrito</p>
+	<img class="icon" data-food-type="objects" src="images/icecream.svg">
+</li>
+<li><p data-food-type="words">Italian</p>
+	<img class="icon" data-food-type="objects" src="images/hoagie.svg">
+</li>
+<li><p data-food-type="words">Salami Wrap</p>
+	<img class="icon" data-food-type="objects" src="images/hoagie.svg">
+</li>
+<li><p data-food-type="words">Sour Patch Kids</p>
+	<img class="icon" data-food-type="objects" src="images/sourpatch.svg">
+</li>
+<li><p data-food-type="words">Pepperoni Pizza</p>
+	<img class="icon" data-food-type="objects" src="images/za.svg">
+</li>
+<li><p data-food-type="words">Hamburger</p>
+	<img class="icon" data-food-type="objects" src="images/hamburger.svg">
+</li>
+</div>
+
+<div id="colors6">
+<h3 data-food-type="words">Orange</h3>
+<li><p data-food-type="words">Cheezits</p>
+	<img class="icon" data-food-type="objects" src="images/cheezits.svg">
+</li>
+</div>
+
+<div id="colors7">
+<h3 data-food-type="words">Yellow</h3>
+<li><p data-food-type="words">Corn</p>
+	<img class="icon" data-food-type="objects" src="images/corn.svg">
+</li>
+<li><p data-food-type="words">Corona</p>
+	<img class="icon" data-food-type="objects" src="images/corona.svg">
+</li>
+<li><p data-food-type="words">Garbonzo Beans</p>
+	<img class="icon" data-food-type="objects" src="images/garb.svg">
+</li>
+<li><p data-food-type="words">Prosecco</p>
+	<img class="icon" data-food-type="objects" src="images/wine.svg">
+</li>
+<li><p data-food-type="words">Tortilla</p>
+	<img class="icon" data-food-type="objects" src="images/tortilla.svg">
+</li>
+<li><p data-food-type="words">Tortilla Chips</p>
+	<img class="icon" data-food-type="objects" src="images/tchips.svg">
+</li>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+/*This is the menu background.*/
+#paper{
+	background-color: white;
+	width: 500px;
+	height: 500px;
+	margin-top: 200px;
+	margin-left: 300px;
+	z-index: -1;
+	position: absolute;
+}
+/*It's a plate for the gallery, via the nav. bar.*/
+#plate{
+	width: 400px;
+	height: 400px;
+	background: white;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	border-radius: 200px;
+	display: none;
+	margin-left: 300px;
+	margin-top: 200px;
+	z-index: -1;
+	position: absolute;
+	box-shadow: 5px 5px black;
+}
+
+
+/*These are the images that appear on the plate.*/
+#pb, #bacon, #pbcup, #raspy, #hammy, 
+#italian, #chicken, #city, #pasta, #pot, #pepperoni, 
+#steak, #tchips, #kettlechip, #raspberry, #cauliflower, #cheezits, 
+#greenbeans, #cheer, #icecream, #fruity, #cups{
+	display: none;
+	margin-top: 200px;
+	margin-left: 300px;
+	z-index: 1;
+	width: 400px;
+	position: absolute;
+}
+/*These drinks appear near the plate.*/
+#cola, #sparkling, #latte, #prosecco{
+	display: none;
+	margin-top: 200px;
+	margin-left: 700px;
+	z-index: 1;
+	width: 400px;
+	position: absolute;
+}
+
+/*The logo and nav. bar float to the right.*/
+#right{
+	float: right;
+	margin-right: 50px;
+}
+
+#navigation{
+	float: right;
+    position: relative;
+    display: inline-block;
+
+}
+
+#about{
+	display: none;
+	margin-top: 200px;
+	max-width: 300px;
+	margin-right: 75px;
+}
+
+#me{
+	line-height: 120%;
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+#navigation:hover #dropdown-content {
+    display: block;
+}
+
+li{
+	list-style-type: none;
+	font-family: sans-serif;
+}
+/*These are the text styles for the beginning menus.*/
+
+#writing1{
+	margin-top: 200px;
+	margin-left: 300px;
+	z-index: 1;
+	position: fixed;
+}
+
+#writing2, #writing3, #writing4, #writing5, #writing6, #colors1, 
+#colors2, #colors3, #colors4, #colors5, #colors6, #colors7{
+	display: none;
+	margin-top: 200px;
+	margin-left: 300px;
+	z-index: 1;
+	position: fixed;
+
+}
+
+h1{
+	font-family: sans-serif;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+hr{
+	border-color: black;
+}
+
+h3{
+	font-family: sans-serif;
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+p{
+	margin-left: 50px;
+	margin-bottom: 0px;
+	line-height: 80%;
+	font-family: sans-serif;
+}
+
+.bighidden{
+	float: left;
+	margin-top: 300px;
+	width: 300px;
+	-ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+    transform: rotate(20deg);
+    position: absolute;
+    z-index: -1;
+}
+
+/*These are the tiny images that display once the images button is clicked via the nav. bar.*/
+.icon{
+	display: none;
+	width: 65px;
+	margin-left: 50px;
+	margin-bottom: 0px;
+
+}
